@@ -1,7 +1,7 @@
 
 RNA-seq bulk data analysis 
 
--5 Controls (Control-1_S1 to Control-1_S5), and 5 treatments (FLLL12-1_S6 to FLLL12-1_S10) were used in this analysis
+-5 Controls (Control-1_S1 to Control-1_S5), and 5 treatments (FLLL12-1_S6 to FLLL12-1_S10), were used in this analysis
 
 -The RNA-seq analysis pipeline started with quality checking by fastqc (v0.12.1), which showed no issues with the quality of the reads at the beginning and end of the 50-length sequence reads for all control and
 treatment samples
