@@ -3,14 +3,14 @@ RNA-seq bulk data analysis
 
 -5 Controls (Control-1_S1 to Control-1_S5), and 5 treatments (FLLL12-1_S6 to FLLL12-1_S10), were used in this analysis
 
--The RNA-seq analysis pipeline started with quality checking by fastqc (v0.12.1), which showed no issues with the quality of the reads at the beginning and end of the 50-length sequence reads for all control and
-treatment samples
+-quality checking was performed by fastqc (v0.12.1)
 
 -After quality checking trimmomatic (v 0.39) was used for adapter trimming and quality control with parameters: ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 SLIDINGWINDOW: 4:15 MINLEN:25
 
 -Quality check using fastqc (v0.12.1) was again performed after trimmomatic-based trimming.
 
-- Paired forward and reverse read sequences from all samples (Control and Treatment) were used further used for alignment by Hisat2 (version 2.2.1) using indexed human genome (GRCH38) 
+- Paired forward and reverse read sequences from all samples (Control and Treatment) were used further used for alignment by Hisat2 (version 2.2.1) using 
+indexed human genome (GRCH38) 
 
 -Alignment was followed by sorting of all bam files (controls and treatments) by sequence read names
 
