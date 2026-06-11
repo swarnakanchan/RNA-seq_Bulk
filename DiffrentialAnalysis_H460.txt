@@ -4,7 +4,7 @@
 
 # Read read counts per gene, counts table
 
-countdata <- read.csv("counts_H460_all.csv", header=TRUE, row.names=1)
+countdata <- read.csv("counts_all.csv", header=TRUE, row.names=1)
 
 countdata <- as.matrix(countdata)
 
@@ -174,7 +174,7 @@ head (main)
 
 #Read lookup table
 
-mylookup3 <-read.csv("FLPT0vsFLPT2_diffexpr-results.csv")
+mylookup3 <-read.csv("diffexpr-results.csv")
 
 head (mylookup6)
 
